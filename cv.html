@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curriculum Vitae | Khandakar Rashedul Islam</title>
+  <meta name="description" content="View or download the curriculum vitae of Khandakar Rashedul Islam.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body data-page="cv">
+
+  <!-- The sidebar, top bar and footer are added automatically by layout.js (shared by every page). -->
+  <div class="main-area" id="page">
+
+    <main id="main">
+
+      <section class="section" id="cv">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Resume</p>
+            <h2>Curriculum Vitae</h2>
+          </div>
+
+          <!-- These buttons work once you upload your CV as assets/cv.pdf -->
+          <div class="cv-actions reveal">
+            <a class="btn btn-primary" href="assets/cv.pdf" target="_blank" rel="noopener">Open in new tab</a>
+            <a class="btn btn-outline" href="assets/cv.pdf" download>Download PDF</a>
+          </div>
+
+          <!-- CV viewer: shows the PDF inside the page -->
+          <div class="cv-viewer reveal">
+            <iframe class="cv-frame" src="assets/cv.pdf#toolbar=1&amp;navpanes=1&amp;view=FitH" title="Curriculum vitae (PDF)"></iframe>
+            <p class="cv-fallback">The PDF preview is not available on this device. Please use the buttons above to open or download my CV.</p>
+                      <div class="cv-pages" id="cv-pages" aria-label="CV preview pages"></div>  
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="layout.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
